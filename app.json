@@ -18,6 +18,17 @@
        "plan": "heroku-postgresql"
     }
  ],
+  "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
  "env": {
     "API_ID": {
        "description": "Get this value from my.telegram.org/apps.",
