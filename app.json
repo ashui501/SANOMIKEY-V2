@@ -1,19 +1,16 @@
 {
-    "name": "Yumikoo",
-    "description": "A Telegram Management + Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://telegra.ph/file/dbb3222d0fd3712e2a0e4.jpg",
+    "name": "Yumikoo Robot",
+    "description": "Telegram Group Management Bot.",
+    "logo": "https://te.legra.ph/file/49c43e6fc856534a09853.jpg",
     "keywords": [
-    "python3",
-    "telegram",
-    "bot",
-    "DAXX",
-    "MusicBot",
-    "telegram-bot",
-    "pyrogram"
-    ],
- "repository": "https://github.com/Mohitag24/Yumikoo",
-      "stack": "heroku-22",
-      "addons": [
+       "telegram",
+       "modular",
+       "group",
+       "manager"
+    ],   
+ "repository": "https://github.com/Noob-Mukesh/MukeshRobot",
+ "stack": "heroku-22",
+ "addons": [
     {
        "options": {
           "version": "12"
@@ -21,62 +18,49 @@
        "plan": "heroku-postgresql"
     }
  ],
-    "env": {
-      "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "",
-        "required": true
-      },
-      "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "",
-        "required": true
-      },
-      "BOT_TOKEN": {
-        "description": "A Bot's token from Botfather",
-        "value": "",
-        "required": true
-      },
-      "MONGO_URL": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com.",
-        "value": "",
-        "required": true
-      },
-      "OWNER_ID": {
-        "description": "The user id of user whom you would like to add as OWNER.",
-        "value": "",
-        "required": true
-      },
-      "SESSION_STRING": {
-        "description": "A Pyrogram v2 String Session from @StringFatherBot on Telegram.",
-        "value": "",
-        "required": true
-      },
-      "BOT_USERNAME":{
-         "description": "Your Bot's Username.",
-         "value": "",
-         "required": true
-      },
-      "COMMAND_HANDLER":{
-         "description": "don't edit.",
-         "value": "/, !",
-         "required": true
-      },
-      "SUDO_USERS":{
-         "description": "SUDO USER ID.",
-         "value": "",
-         "required": true
-      },
+ "env": {
+    "API_ID": {
+       "description": "Get this value from my.telegram.org/apps.",
+       "required": true,
+       "value": ""
     },
-    "buildpacks": [
-          {
-              "url": "heroku/python"
-          },
-          {
-              "url": "heroku/nodejs"
-          },
-          {
-              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-          }
-    ]
+    "API_HASH": {
+       "description": "Get this value from my.telegram.org/apps.",
+       "required": true,
+       "value": ""
+    },
+    "SESSION_STRING": {
+       "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
+       "value": ""
+    },
+    "SUDO_USERS": {
+       "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
+       "value": ""
+    },
+    "BOT_USERNAME": {
+       "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
+       "required": true,
+       "value": ""
+    },
+    "COMMAND_HANDLER": {
+       "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
+       "required": true,
+       "value": ""
+    },
+    "MONGO_URL": {
+       "description": "Required for database connections.",
+       "required": true,
+       "value": ""
+    },
+    "OWNER_ID": {
+       "description": "Your user ID as an integer.",
+       "required": true,
+       "value": ""
+    },
+    "BOT_TOKEN": {
+       "description": "Get bot token from @BotFather on TG",
+       "required": true,
+       "value": ""
+    }
  }
+}
