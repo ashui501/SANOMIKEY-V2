@@ -53,14 +53,17 @@
         "required": true
       },
       "BOT_USERNAME":{
+         "description": "Your Bot's Username.",
          "value": "",
          "required": true
       },
       "COMMAND_HANDLER":{
-         "value": "",
+         "description": "don't edit.",
+         "value": "/, !",
          "required": true
       },
       "SUDO_USERS":{
+         "description": "SUDO USER ID.",
          "value": "",
          "required": true
       },
