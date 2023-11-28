@@ -11,6 +11,16 @@
     "telegram-bot",
     "pyrogram"
     ],
+ "repository": "https://github.com/Mohitag24/Yumikoo",
+      "stack": "heroku-22",
+      "addons": [
+    {
+       "options": {
+          "version": "12"
+       },
+       "plan": "heroku-postgresql"
+    }
+ ],
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
@@ -65,6 +75,5 @@
           {
               "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
-      ],
-      "stack": "container"
-  }
+    ]
+ }
